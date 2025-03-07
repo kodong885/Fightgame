@@ -1,0 +1,61 @@
+html, body{
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    position: relative;
+}
+
+#guideBackground {
+    background-color: bisque;
+
+    position: absolute;
+    left: 300px;
+    top: 120px;  
+    display: inline-block;
+    width: 900px;
+    height: 450px;
+    border: 3px solid black;
+    border-radius: 17px;
+    box-shadow: 5px 5px 5px gray;
+
+    animation: flipInX; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 1s; /* don't forget to set a duration! */
+  
+}
+
+#playerGuide {
+    position: relative;
+    left: 170px;
+    top: 70px;
+    right: 100px;
+    display: inline-block;
+    width: 220px;
+    height: 100px;
+}
+
+#enemyGuide {
+    position: relative;
+    right: 0;
+    top: 70px;
+    left: 330px;    
+    display: inline-block;
+    width: 220px;
+    height: 100px;
+}
+
+#closeBtn {
+    position: absolute;
+    background-color: deepskyblue;
+    display: inline-block;
+    border: 3px solid dodgerblue;
+    border-radius: 10px;
+    cursor: pointer;
+    
+    width: 55px;
+    height: 25px;
+    left: 815px;
+    top: 20px;
+    line-height: 23px;
+    text-align: center;     
+}
+/* css에서 세미콜론을(;) 하나의 css설정끝에 붙이면, 그 아래 코드는 전혀 실행안됨! */

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FightGame</title>
+    <script src="main.js" defer></script>
+    <link rel="stylesheet" href="main.css"> 
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+</head>
+<body>
+    <span id="guideBackground">
+        <span id="playerGuide">
+            <p style="font-size: x-large;" > 
+              <b> ▷ playerGuide </b> <br> 
+                <br>▨Move▨<br>
+
+                <b><em>d</em></b> (right) , <b><em>a</em></b> (left) , <b><em>w</em></b> (jump)<br><br>
+                
+                ▨attack▨ <br>
+
+                <em>v</em></b><br>
+            </p>
+        </span>
+        <span id="enemyGuide">
+            <p style="font-size: x-large;" >
+             <b>   ▷ enemyGuide <br> </b>
+                <br>▨Move▨ <br>
+
+                <b><em>←</em></b> (left) , <b><em>→</em></b> (right) , <b><em>↑</em></b> (jump) <br><br>
+                
+                ▨attack▨ <br>
+
+              <b><em>l</em></b> <br>
+            </p>
+        </span>
+        <span id="closeBtn" onclick="closeBtn()"> <b>close</b> </span>
+    </span>
+    <canvas id="Canvas" style="z-index: 1;" ></canvas>
+</body>
+</html>
+
+
+
+
+<!-- 
+ <fightGame 만들며 익힌 점>
+    1. 캐릭터 키 관리는 객체로 관리( bool 값 )
+    2. 하나의 이미지 객체로 두가지 이미지 구현 X 
+        → 각각 따로 해야, 한 번 애니메이션 실행 시(by 반복 함수) 겹치지 않고 작동!
+    3. (반복함수 실행 시) 실행의 우선 순위 잘 정하기! 
+        → 절대적으로 먼저 실행시킬 액션은 if 문으로 제어!)
+    4. 캐릭터는 겍체로 만들어버리기;
+-->
